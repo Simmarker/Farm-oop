@@ -1,0 +1,10 @@
+version: '3.0'
+
+services:
+  farm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: 'farm'
+    volumes:
+      - ./:/app
